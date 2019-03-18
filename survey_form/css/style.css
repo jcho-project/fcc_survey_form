@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500);
+
+html,
+body {
+  font-family: "Raleway", Helvetica, sans-serif;
+  width: 900px;
+  padding: 20px;
+  margin: auto;
+  background-color: #80CBC4;
+}
+
+/* Form Outline */
+#survey-form {
+  padding: 20px;
+  border: solid grey 1.5px;
+  border-radius: 5px;
+  box-shadow: 5px 8px 10px #888888;
+  background-color: #ffffff;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+/* Title */
+#title, #description {
+  text-align: center;
+  color: #383838;
+}
+
+/* Question Blocks */
+#personal, #dropdown, #radio-choice, #checkbox-choice, #comment {
+  height: 100px;
+}
+
+/* Labels */
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 290px;
+  margin-left: 20px;
+  padding-right: 40px;
+  font-weight: 600;
+}
+
+/* Input Styling */
+input[type=number], [type=email], [type=name], #dropdown select {
+  width: 250px;
+  border: 1px solid #767676;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+input[type=radio], [type=checkbox] {
+  margin: 5px;
+}
+
+.radio-checkbox {
+  margin-right: 10px;
+}
+
+/* Text Area */
+textarea {
+  outline: none;
+  resize: none;
+}
+
+/* Button Styling */
+.button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  background: #0097A7;
+}
+
+button:hover {
+  background: grey;
+  cursor: pointer;
+}
+

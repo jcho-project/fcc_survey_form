@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FCC Remote Pair Programming</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <img class="logo" src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg">
+  <h1 id="title">Remote Pair Programming Survey</h1>
+  <p id="description">
+    Let us find you a perfect match for Pair Programming !
+  </p>
+
+  <form id="survey-form">
+    <!-- Personal Information -->
+    <div class="personal">
+      <label id="name-label">* Name :</label>
+      <input type="name" id="name" placeholder="Enter your Name" required /><br>
+      <label id="email-label">* E-mail :</label>
+      <input type="email" id="email" placeholder="Enter your Email" required /><br>
+      <label id="number-label">* Age :</label>
+      <input type="number" id="number" min="1" max="125" placeholder="Enter your Age" required />
+    </div>
+
+    <!-- First Question -->
+    <div id="dropdown">
+      <label for="experience">What is your experience level in Programming ?</label>
+      <select name="experience">
+        <option value="beginner">Beginner</option>
+        <option value="novice">Novice</option>
+        <option value="advanced">Advanced</option>
+        <option value="expert">Expert</option>
+      </select>
+    </div>
+
+    <!-- Second Question -->
+    <div id="radio-choice">
+      <label for="radio">How many hours per day do you spend Coding ?</label>
+      <input type="radio" name="hours" value="1hour" />1 Hour
+      <input type="radio" name="hours" value="2hour" />2 Hours
+      <input type="radio" name="hours" value="3hour" />3 Hours
+      <input type="radio" name="hours" value="4hour" />4 Hours
+      <input type="radio" name="hours" value="5hour" />5+ Hours
+    </div>
+
+    <!-- Third Question -->
+    <div id="checkbox-choice">
+      <label for="checkbox">What are top 3 qualities you look for in a Coding Partner?</label>
+      <input class="radio-checkbox" type="checkbox" name="qualities" value="Outgoing" />Outgoing
+      <input class="radio-checkbox" type="checkbox" name="qualities" value="Respectful" />Respectful
+      <input class="radio-checkbox" type="checkbox" name="qualities" value="Communication" />Communication Skills
+      <input class="radio-checkbox" type="checkbox" name="qualities" value="Flexible" />Flexible
+      <input class="radio-checkbox" type="checkbox" name="qualities" value="Creative" />Creative
+      <input class="radio-checkbox" type="checkbox" name="qualities" value="Leadership" />Leadership
+    </div>
+
+    <!-- Text Area -->
+    <div id="comment">
+      <label for="requirements">Please tell us if you have any more special requirements or requests when pairing you
+        up!</label>
+      <textarea placeholder="Tell us more about the person you are looking for!" name="requirements" cols="60"
+        rows="7"></textarea>
+    </div>
+
+    <!-- Submit -->
+    <div class="button-container">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
